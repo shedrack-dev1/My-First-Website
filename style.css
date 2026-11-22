@@ -31,3 +31,9 @@ p {
 li {
     margin: 10px;
 }
+.academy-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
