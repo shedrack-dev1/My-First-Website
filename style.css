@@ -1,4 +1,8 @@
-
+.academy-section h2 {
+    color: gold;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
 body {
     background-color: black;
     color: white;
