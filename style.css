@@ -47,3 +47,9 @@ li {
     border-radius: 15px;
     margin-top: 30px;
 }
+button {
+    background: black;
+    colour:white;
+    border:2px solid gold;
+    border-radius: 10px;
+    padding: 12px 20px;
