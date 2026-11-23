@@ -58,4 +58,17 @@ button {
     .academy-buttons {
         flex-direction: column;
     }
+   .academy-section {
+
+        padding: 15px;
+
+    }
+
+    .academy-section h2 {
+
+        font-size: 22px;
+
+    }
+
+
 }
