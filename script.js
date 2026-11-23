@@ -4,9 +4,10 @@ joinButton.addEventListener("click", function() {
 });
 let playersButton = document.getElementById("players-button");
 playersButton.addEventListener("click", function() {
-    alert("Welcome to Shedrack Football Academy! Meet our players.");
-    contactButton.addEventListener("click", function() {
-    alert("Thank you for contacting Shedrack Football Academy!");
+    alert("Welcome to Shedrack Football Academy! Meet our players.");    
 });
 });
 let contactButton = document.getElementById("contact-button");
+contactButton.addEventListener("click", function() {
+    alert("Thank you for contacting Shedrack Football Academy!");
+});
