@@ -17,5 +17,11 @@ contactButton.addEventListener("click", function() {
 });
 document.getElementById("registration-form").addEventListener("submit", function(event) {
     event.preventDefault();
+    let age = Number(document.getElementById("player-age").value);
+    if (age >= 18 && age <= 35) {
+    alert("Age accepted!");
+} else {
+    alert("Age not accepted!");
+}
 });
 
