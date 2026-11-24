@@ -12,6 +12,9 @@ playersButton.addEventListener("click", function() {
 });
 
 let registrationMessage = document.getElementById("registration-message");
+document.getElementById("player-name").addEventListener("input", function() {
+    registrationMessage.textContent = "";
+});
 
 document.getElementById("registration-form").addEventListener("submit", function(event) {
     event.preventDefault();
