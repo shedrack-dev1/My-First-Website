@@ -28,4 +28,5 @@ document.getElementById("registration-form").addEventListener("submit", function
         alert("Age not accepted!");
         registrationMessage.textContent = "Sorry, you do not meet our age requirements.";
     }
+    document.getElementById("registration-form").reset();
 });
