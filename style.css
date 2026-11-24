@@ -105,3 +105,11 @@ button, a {
     padding: 12px;
     border-radius: 8px;
 }
+button:hover {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+}
+button:active {
+    transform: scale(0.95);
+}
