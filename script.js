@@ -20,4 +20,6 @@ document.getElementById("registration-form").addEventListener("submit", function
     alert("Age not accepted!");
 }
 });
+let registrationMessage = document.getElementById("registration-message");
+registrationMessage.textContent = "Welcome to Shedrack Football Academy!";
 
