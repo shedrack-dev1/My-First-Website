@@ -12,8 +12,11 @@ playersButton.addEventListener("click", function() {
 });
 
 let registrationMessage = document.getElementById("registration-message");
+
 document.getElementById("player-name").addEventListener("input", function() {
     registrationMessage.textContent = "";
+    registrationMessage.classList.remove("success-message");
+    registrationMessage.classList.remove("error-message");
 });
 
 document.getElementById("registration-form").addEventListener("submit", function(event) {
@@ -21,12 +24,19 @@ document.getElementById("registration-form").addEventListener("submit", function
 
     let age = Number(document.getElementById("player-age").value);
 
+    registrationMessage.classList.remove("success-message");
+    registrationMessage.classList.remove("error-message");
+
     if (age >= 18 && age <= 35) {
-        
         registrationMessage.textContent = "Congratulations! Your age meets our registration requirements.";
+
+        registrationMessage.classList.add("success-message");
+
     } else {
-        
         registrationMessage.textContent = "Sorry, you do not meet our age requirements.";
+
+        registrationMessage.classList.add("error-message");
     }
+
     document.getElementById("registration-form").reset();
 });
