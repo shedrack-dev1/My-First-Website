@@ -27,7 +27,7 @@ document.getElementById("registration-form").addEventListener("submit", function
     registrationMessage.classList.remove("success-message");
     registrationMessage.classList.remove("error-message");
 
-    if (age >= 18 && age <= 35) {
+    if (age >= 18 && age <= 25) {
         registrationMessage.textContent = "Congratulations! Your age meets our registration requirements.";
 
         registrationMessage.classList.add("success-message");
