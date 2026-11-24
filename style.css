@@ -110,6 +110,11 @@ button:hover {
     color: black;
     cursor: pointer;
 }
+button {
+    transition: transform 0.2s ease;
+}
+
 button:active {
     transform: scale(0.95);
 }
+
