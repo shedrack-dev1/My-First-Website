@@ -10,7 +10,6 @@ playersButton.addEventListener("click", function() {
     alert("Welcome to Shedrack Football Academy! Meet our players.");
 });
 
-});
 document.getElementById("registration-form").addEventListener("submit", function(event) {
     event.preventDefault();
     alert("JavaScript registration listener is working!");
