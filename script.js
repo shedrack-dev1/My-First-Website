@@ -21,6 +21,7 @@ document.getElementById("registration-form").addEventListener("submit", function
     if (age >= 18 && age <= 35) {
         alert("Age accepted!");
         registrationMessage.textContent = "Congratulations! Your age meets our registration requirements.";
+            alert(registrationMessage.textContent);
     } else {
         alert("Age not accepted!");
         registrationMessage.textContent = "Sorry, you do not meet our age requirements.";
