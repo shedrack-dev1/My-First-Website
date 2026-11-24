@@ -16,10 +16,12 @@ document.getElementById("registration-form").addEventListener("submit", function
     let age = Number(document.getElementById("player-age").value);
     if (age >= 18 && age <= 35) {
     alert("Age accepted!");
+        registrationMessage.textContent = "Congratulations! Your age meets our registration requirements.";l
 } else {
     alert("Age not accepted!");
+        registrationMessage.textContent = "Sorry, you do not meet our age requirements.";
 }
 });
 let registrationMessage = document.getElementById("registration-message");
-registrationMessage.textContent = "Welcome to Shedrack Football Academy!";
+
 
