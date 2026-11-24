@@ -12,7 +12,7 @@ playersButton.addEventListener("click", function() {
 
 document.getElementById("registration-form").addEventListener("submit", function(event) {
     event.preventDefault();
-    alert("JavaScript registration listener is working!");
+    
     let age = Number(document.getElementById("player-age").value);
     if (age >= 18 && age <= 35) {
     alert("Age accepted!");
