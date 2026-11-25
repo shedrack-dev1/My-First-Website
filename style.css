@@ -1,8 +1,6 @@
-.academy-section h2 {
-    color: gold;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
+
+/* GENERAL WEBSITE STYLING */
+
 body {
     background-color: black;
     color: white;
@@ -12,15 +10,12 @@ body {
 }
 
 h1 {
-
     color: red;
     font-size: 32px;
     border: 2px solid white;
     padding: 15px;
     margin: 20px;
     border-radius: 12px;
-
- 
 }
 
 h2 {
@@ -34,52 +29,67 @@ p {
 li {
     margin: 10px;
 }
+
+/* GENERAL BUTTONS AND LINKS */
+
+button, a {
+    background: black;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+button:hover {
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    transition: transform 0.2s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* ACADEMY SECTION */
+
+.academy-section {
+    background-color: #222222;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url("27FD0F51-68A4-4D59-95EE-85A193441D0D.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.academy-section h2 {
+    color: gold;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
 .academy-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-.academy-section {
-    background-color: #222222;
-background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("27FD0F51-68A4-4D59-95EE-85A193441D0D.png");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-    padding: 30px;
-    border-radius: 15px;
-    margin-top: 30px;
-}
-button, a {
-    background: black;
-    color:white;
-    border:2px solid gold;
-    border-radius: 10px;
-    padding: 12px 20px;
-}
-@media (max-width: 600px) {
-    .academy-buttons {
-        flex-direction: column;
-    }
-   .academy-section {
 
-        padding: 15px;
+/* REGISTRATION FORM */
 
-    }
-
-    .academy-section h2 {
-
-        font-size: 22px;
-
-    }
-
-
-}
 #registration-form label {
     display: block;
     margin-top: 12px;
     margin-bottom: 6px;
 }
+
 #registration-form input,
 #registration-form select {
     display: block;
@@ -88,6 +98,7 @@ button, a {
     padding: 10px;
     margin-bottom: 12px;
 }
+
 #registration-form button {
     background: black;
     color: white;
@@ -97,30 +108,23 @@ button, a {
     margin-top: 10px;
     cursor: pointer;
 }
+
 .success-message {
     color: #4ade80;
     background-color: #153b2a;
     padding: 12px;
     border-radius: 8px;
 }
+
 .error-message {
     color: #ff6b6b;
     background-color: #482020;
     padding: 12px;
     border-radius: 8px;
 }
-button:hover {
-    background-color: gold;
-    color: black;
-    cursor: pointer;
-}
-button {
-    transition: transform 0.2s ease;
-}
 
-button:active {
-    transform: scale(0.95);
-}
+/* ABOUT SECTION */
+
 .about-section {
     background-color: #222222;
     color: white;
@@ -142,6 +146,9 @@ button:active {
     max-width: 700px;
     margin: 0 auto;
 }
+
+/* MISSION AND VISION */
+
 .mission-vision {
     display: flex;
     gap: 20px;
@@ -170,11 +177,9 @@ button:active {
     max-width: 700px;
     margin: 0 auto;
 }
-@media (max-width: 600px) {
-    .mission-vision {
-        flex-direction: column;
-    }
-}
+
+/* FOOTER */
+
 .academy-footer {
     background-color: #222222;
     color: white;
@@ -203,9 +208,12 @@ button:active {
     font-size: 14px;
     margin-top: 20px;
 }
+
+/* NAVIGATION BAR */
+
 .navbar {
     position: sticky;
-top: 0;
+    top: 0;
     z-index: 1000;
     background-color: #222222;
     padding: 18px;
@@ -228,17 +236,9 @@ top: 0;
 .navbar a:hover {
     color: white;
 }
-@media (max-width: 600px) {
-    .navbar {
-        gap: 15px;
-        padding: 15px;
-    }
 
-    .navbar a {
-        font-size: 14px;
-    }
-}
-/* Hamburger menu button */
+/* HAMBURGER BUTTON */
+
 #menu-toggle {
     display: none;
     background-color: #222222;
@@ -250,7 +250,8 @@ top: 0;
     border-radius: 8px;
 }
 
-/* Navigation links container */
+/* NAVIGATION LINKS CONTAINER */
+
 .nav-links {
     display: flex;
     justify-content: center;
@@ -258,29 +259,55 @@ top: 0;
     gap: 25px;
 }
 
-/* Mobile navigation */
+/* MOBILE RESPONSIVE DESIGN */
+
 @media (max-width: 600px) {
-    #menu-toggle {
-        display: block;
+
+    .academy-buttons {
+        flex-direction: column;
+    }
+
+    .academy-section {
+        padding: 15px;
+    }
+
+    .academy-section h2 {
+        font-size: 22px;
+    }
+
+    .mission-vision {
+        flex-direction: column;
     }
 
     .navbar {
         flex-direction: column;
         align-items: stretch;
+        gap: 0;
+        padding: 12px;
+    }
+
+    #menu-toggle {
+        display: block;
+        align-self: flex-end;
+        width: 48px;
+        height: 44px;
+        font-size: 24px;
+        padding: 4px;
     }
 
     .nav-links {
         display: none;
         flex-direction: column;
+        align-items: center;
         gap: 18px;
-        padding-top: 15px;
+        padding: 20px 0 10px;
     }
 
     .nav-links.show {
         display: flex;
     }
+
+    .nav-links a {
+        font-size: 16px;
+    }
 }
-
-
-
-
