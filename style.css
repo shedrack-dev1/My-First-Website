@@ -175,4 +175,32 @@ button:active {
         flex-direction: column;
     }
 }
+.academy-footer {
+    background-color: #222222;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.academy-footer h3 {
+    color: gold;
+    font-size: 24px;
+}
+
+.academy-footer p {
+    color: #eeeeee;
+    line-height: 1.8;
+}
+
+.academy-footer a {
+    color: gold;
+    text-decoration: none;
+}
+
+.academy-footer .copyright {
+    font-size: 14px;
+    margin-top: 20px;
+}
 
