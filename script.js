@@ -40,3 +40,13 @@ document.getElementById("registration-form").addEventListener("submit", function
 
     document.getElementById("registration-form").reset();
 });
+let menuToggle = document.getElementById("menu-toggle");
+let navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", function() {
+    navLinks.classList.toggle("show");
+
+    let isExpanded = navLinks.classList.contains("show");
+
+    menuToggle.setAttribute("aria-expanded", isExpanded);
+});
