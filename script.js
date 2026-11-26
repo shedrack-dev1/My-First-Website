@@ -66,3 +66,32 @@ navigationLinks.forEach(function(link) {
         menuToggle.textContent = "☰";
     });
 });
+let sections = document.querySelectorAll(
+    "#home, #about, #mission-vision, #registration, #contact"
+);
+
+window.addEventListener("scroll", function() {
+
+    let currentSection = "";
+
+    sections.forEach(function(section) {
+
+        let sectionTop = section.offsetTop;
+
+        if (window.scrollY >= sectionTop - 150) {
+            currentSection = section.getAttribute("id");
+        }
+
+    });
+
+    navigationLinks.forEach(function(link) {
+
+        link.classList.remove("active");
+
+        if (link.getAttribute("href") === "#" + currentSection) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
