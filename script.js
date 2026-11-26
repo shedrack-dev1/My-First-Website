@@ -56,7 +56,6 @@ menuToggle.addEventListener("click", function() {
         menuToggle.textContent = "☰";
     }
 });
-});
 let navigationLinks = document.querySelectorAll(".nav-links a");
 
 navigationLinks.forEach(function(link) {
