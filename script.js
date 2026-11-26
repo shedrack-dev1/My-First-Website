@@ -49,6 +49,13 @@ menuToggle.addEventListener("click", function() {
     let isExpanded = navLinks.classList.contains("show");
 
     menuToggle.setAttribute("aria-expanded", isExpanded);
+
+    if (isExpanded) {
+        menuToggle.textContent = "✕";
+    } else {
+        menuToggle.textContent = "☰";
+    }
+});
 });
 let navigationLinks = document.querySelectorAll(".nav-links a");
 
@@ -57,5 +64,6 @@ navigationLinks.forEach(function(link) {
         navLinks.classList.remove("show");
 
         menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.textContent = "☰";
     });
 });
