@@ -321,3 +321,20 @@ html {
     border-radius: 8px;
     font-weight: bold;
 }
+#back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    z-index: 2000;
+}
+
