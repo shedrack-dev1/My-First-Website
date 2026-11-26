@@ -314,3 +314,10 @@ button:active {
 html {
     scroll-behavior: smooth;
 }
+.nav-links a.active {
+    background-color: gold;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
