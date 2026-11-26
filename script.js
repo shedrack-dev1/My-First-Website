@@ -50,3 +50,12 @@ menuToggle.addEventListener("click", function() {
 
     menuToggle.setAttribute("aria-expanded", isExpanded);
 });
+let navigationLinks = document.querySelectorAll(".nav-links a");
+
+navigationLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        navLinks.classList.remove("show");
+
+        menuToggle.setAttribute("aria-expanded", "false");
+    });
+});
