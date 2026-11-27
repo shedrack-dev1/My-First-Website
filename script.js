@@ -8,7 +8,9 @@ joinButton.addEventListener("click", function() {
 let playersButton = document.getElementById("players-button");
 
 playersButton.addEventListener("click", function() {
-    alert("Welcome to Shedrack Football Academy! Meet our players.");
+    document.getElementById("players").scrollIntoView({
+        behavior: "smooth"
+    });
 });
 
 let registrationMessage = document.getElementById("registration-message");
