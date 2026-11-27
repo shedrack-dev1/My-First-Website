@@ -100,7 +100,7 @@ let backToTop = document.getElementById("back-to-top");
 window.addEventListener("scroll", function() {
 
     if (window.scrollY > 300) {
-        backToTop.style.display = "block";
+        backToTop.style.display = "flex";
     } else {
         backToTop.style.display = "none";
     }
