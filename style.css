@@ -342,4 +342,48 @@ html {
     justify-content: center;
     line-height: 1;
 }
+/* PLAYERS SECTION */
 
+.players-section {
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.players-section h2 {
+    color: gold;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.players-section p {
+    line-height: 1.6;
+}
+
+.players-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.player-card {
+    background-color: #222222;
+    border: 2px solid gold;
+    border-radius: 15px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+}
+
+.player-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.player-card h3 {
+    color: gold;
+    margin-top: 15px;
+}
